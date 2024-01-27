@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-calculator {
+  width: 25%;
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  /* gap: 10px; */
+  grid-template-areas:
+    "screen screen screen screen"
+    "clear clear back divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero zero zero equals";
+}
+.screen {
+  grid-area: screen;
+  color: white;
+  background-color: #000;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+  padding: 20px 5px;
+}
+button {
+  padding: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  border: none;
+  color: #000;
+  border: 1px solid #000;
+  background-color: #d8d9db;
+}
+button:hover {
+  background-color: #ebebeb;
+}
+.clear {
+  grid-area: clear;
+}
+.back {
+  grid-area: back;
+}
+.divide {
+  grid-area: divide;
+}
+.multiply {
+  grid-area: multiply;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.subtract {
+  grid-area: subtract;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.add {
+  grid-area: add;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.zero {
+  grid-area: zero;
+}
+.equals {
+  grid-area: equals;
+}
+.orange {
+  background-color: #df974c;
+  color: white;
+}
+
+.my-calculator .orange:hover {
+  background-color: #dfb07e;
+}
